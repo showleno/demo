@@ -1,0 +1,167 @@
+/*eleme字体*/
+@font-face {
+    font-family: eleme;
+    src: url(//faas.elemecdn.com/desktop/media/font/eleme.6f8da4.eot);
+    src: local('â˜ºï¸Ž'),url(//faas.elemecdn.com/desktop/media/font/eleme.a61c32.woff) format('woff'),url(//faas.elemecdn.com/desktop/media/font/eleme.8e5aeb.ttf) format('truetype'),url(//faas.elemecdn.com/desktop/media/font/eleme.94ccdd.svg#eleme) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+.starrating i:before, .starrating:before {
+    content: "\e950\e950\e950\e950\e950";
+}
+[class*=" icon-"],[class^=icon-] {
+    font-family: eleme;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.starrating{
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    color: #ccc;
+    font-size:4vw;
+}
+.starrating i {
+	font-style:normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #ffc30c;
+    white-space: nowrap;
+    font-size:4vw;
+    line-height: 30px;
+}
+/*商家列表*/
+.content{
+	padding:0 6px 10px;
+}
+.listContent{
+	overflow:hidden;
+}
+.listContent li{
+	border-radius:8px;
+	border:1px solid #ddd;
+	overflow:hidden;
+	margin-bottom:12px;
+}
+.listContent li .topBox{
+	background: #fff;
+	padding:14px;
+	overflow:hidden;
+	display:-webkit-box;
+	border-bottom:1px solid #ddd;
+}
+.listContent li .topBox .logoImg{
+	margin-right:16px;
+	overflow:hidden;
+	/*-webkit-box-flex:1;*/
+	width:20vw;
+	height:20vw;
+	position:relative;
+}
+.listContent li .topBox .logoImg img{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: 100%;
+}
+.listContent li .topBox .info{
+	-webkit-box-flex:1;
+	color:#333;
+	overflow:hidden;
+}
+.listContent li .topBox .info h3{
+	font-size: 4vw;
+	white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.listContent li .topBox .info img{
+	padding:6px 0;
+}
+.listContent li .topBox .info span{
+	display:block;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.listContent li .botBox{
+	background:#F0F0F0;
+	padding:6px 14px;
+	display:-webkit-box;
+}
+.listContent li .botBox .saleIcon{
+	-webkit-box-flex:1;
+	display:block;
+	padding-right:20px;
+}
+.listContent li .botBox img{
+	width:7vw;
+	height:7vw;
+}
+.listContent li .botBox .fullCut{
+	background:#FF7373;
+}
+.listContent li .botBox .package{
+	background:#FFAA2B;
+}
+.floor{
+	background: #AFAFAF;
+	width:7vw;
+	height:7vw;
+	display:inline-block;
+	line-height: 7vw;
+	color:#fff;
+	font-size:3vw;
+	text-align: center;
+	border-radius:50%;
+	font-weight: 700;
+}
+/*listfilter部分*/
+.listPage{
+	padding:46px 0 10px;
+	background:#fff;
+	min-height:700px;
+}
+.listPage .listWrap{
+	padding:0 6px;
+}
+.order{
+	overflow:hidden;
+	display:-webkit-box;
+	margin-bottom:10px;
+}
+.order li {
+	-webkit-box-flex:1;
+	height:33px;
+	line-height: 33px;
+	background:#eee;
+	color:#333;
+	text-align: center;
+	border-right:1px solid #ccc;
+}
+.order li:last-child{
+	border-right:0;
+}
+.order li span{
+	font-size:14px;
+}
+.order li .arrow{
+	border:6px solid transparent;
+	border-top-color:#ccc;
+	font-size:0;
+	position:relative;
+	left:20px;
+}

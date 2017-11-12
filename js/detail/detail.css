@@ -1,0 +1,125 @@
+
+.detail{
+	min-height:100%;
+	padding-bottom:20px;
+	background: #000;
+} 
+.detail nav{
+	display:-webkit-box;
+	background: #D0121B;
+	overflow:hidden;
+}
+.imgWrap{
+	width:100%;
+	height:66vw;
+	position:relative;
+}
+.detail .foodImg{
+	width:100%;
+	height:66vw;
+}
+.detail .mengban{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:66vw;
+	box-shadow:0 0 30px #000 inset;
+	-webkit-box-shadow:0 -30px 70px #000 inset;
+	z-index:2;
+}
+.detail nav span{
+	-webkit-box-flex: 1;
+	display:block;
+	color:#fff;
+	border-right:1px solid #ccc;
+	text-align: center;
+	font-size:5vw;
+	line-height: 12vw;
+}
+.shopInfo{
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius:8px;
+	overflow:hidden;
+	color:#fff;
+}
+.shopInfo .title{
+	padding:0 10px;
+	border-bottom:1px solid #ccc;
+	background: #eee;
+	line-height: 44px;
+}
+.shopInfo .title .floor{
+	float:left;
+	margin-top:7px;
+}
+.shopInfo .title .shopName{
+	color:#666;
+	font-size:18px;
+	font-weight: bold;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 195px;
+    display: inline-block;
+    float:left;
+    margin-left:5px;
+}
+.shopInfo .title .starrating{
+	float:right;
+	margin-top:7px;
+}
+.shopInfo .address{
+	line-height: 44px;
+	padding:0 10px;
+}
+.shopInfo .address .left{
+	width:60%;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.shopInfo .address .right{
+	padding-left:10px;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.shopInfo .address img{
+	width:7vw;
+	height:7vw;
+	vertical-align:middle;
+}
+.shopInfo .address .left span, .shopInfo .address .right span{
+	color:#666;
+	font-size:14px;
+
+}
+.shopSales{
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius:8px;
+	color:#fff;
+	margin-top:10px;
+}
+.shopSales .title{
+	padding:0 10px;
+	border-bottom:1px solid #ccc;
+	background: #eee;
+	line-height: 44px;
+	color:#666;
+	font-size:16px;
+}
+.shopSales .salePaper{
+	padding:10px;
+	text-align: center;
+}
+.shopSales .salePaper img{
+	width:100%;
+	margin-bottom:6px;
+}
+.shopSales .salePaper span{
+	font-size:18px;
+	color:#ccc;
+}

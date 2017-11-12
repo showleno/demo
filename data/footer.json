@@ -1,0 +1,25 @@
+{
+	"errno":0,
+	"data":[
+		{
+			"title":"首页",
+			"name":"home",
+			"href":"#home"
+		},
+		{
+			"title":"优惠",
+			"name":"sale",
+			"href":"#list"
+		},
+		{
+			"title":"发现",
+			"name":"find",
+			"href":"#home"
+		},
+		{
+			"title":"我",
+			"name":"single",
+			"href":"#home"
+		}
+	]
+}

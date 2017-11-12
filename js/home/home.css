@@ -1,0 +1,164 @@
+#app{
+	display:block !important;
+	/*快速回弹滚动*/
+	/*-webkit-overflow-scrolling:touch;*/
+	/*overflow:auto;*/
+}
+/*搜索框*/
+.topBar{
+	background: #D0121B;
+	height:26px;
+	position: fixed;
+	left:0;
+	right:0;
+	z-index:99999;
+	display:-webkit-box;
+	line-height: 26px;
+	padding:10px 0 10px 10px ;
+}
+.searchWrap{
+	position:relative;
+	-webkit-box-flex:1;
+}
+.topBar input{
+	padding:6px 6px 6px 34px;
+	color:#fff;
+	width:87%;
+	display:block;
+	background:#BC1018;
+	border-radius:4px;
+	height:16px;
+	line-height: 28px;
+	border:0;
+	box-shadow:inset 1px 1px #AA0E15;
+}
+.topBar span.search{
+	color:#fff;
+	display:inline-block;
+	padding:0 15px;
+}
+.topBar img{
+	width:21px;
+	height:18px;
+	position:absolute;
+	left:6px;
+	top:6px;
+	vertical-align:middle;
+}
+/*菜单分类区*/
+.menu{
+	padding: 62px 16px 0px 16px;
+	background:#fff;
+}
+.menu ul{
+	text-align: center;
+	overflow:hidden;
+}
+.menu ul li{
+	width:25%;
+	float:left;
+	margin-bottom:20px;
+}
+.menu ul li a{
+	display:block;
+}
+.menu ul li span{
+	padding-top:3px;
+	display:block;
+	color:#333;
+}
+/*优惠券区*/
+.salePaper{
+	padding:10px 6px 10px;
+}
+.salePaper ul{
+	overflow:hidden;
+	text-align: center;
+	display:-webkit-box;
+}
+.salePaper ul li{
+	-webkit-box-flex:1;
+	background: #fff;
+	padding-bottom:10px;
+	margin-right:6px;
+}
+.salePaper ul li:last-child{
+	margin-right:0;
+}
+.salePaper ul li img{
+	width:100%;
+}
+.salePaper ul li a{
+	display:block;
+}
+.salePaper ul li a span{
+	display:block;
+}
+
+
+/*底部链接*/
+.pageLink{
+	position: fixed;
+	bottom:0;
+	left:0;
+	border-top:1px solid #ccc;
+	background:#eee;
+	width:100%;
+	height:58px;
+	z-index:999;
+}
+.pageLink ul{
+	display:-webkit-box;
+}
+.pageLink ul li{
+	-webkit-box-flex:1;
+	width:25%;
+	text-align: center;
+	padding-top:8px;
+}
+.pageLink ul li.active{
+	border-top:2px solid #D0121B;
+}
+.pageLink ul li a{
+	display:block;
+}
+.pageLink ul li.active i.home{
+	background-position: 0 -25px;
+}
+.pageLink ul li.active i.sale{
+	background-position:-27px -25px;
+}
+.pageLink ul li i{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	background:url(../../img/foot_img/footer_icon.png) no-repeat 0 0;
+	background-size:103px 45px;
+}
+.pageLink ul li i.sale{
+	background-position: -28px 0; 
+}
+.pageLink ul li i.find{
+	background-position: -56px 0;
+}
+.pageLink ul li i.single{
+	background-position: -79px 0;
+}
+.pageLink ul li span{
+	display:block;
+	color:#333;
+}
+.go-top{
+	width:10vw;
+	height:10vw;
+	text-align: center;
+	line-height: 10vw;
+	background:#999;
+	color:#fff;
+	position:fixed;
+	right:10px;
+	bottom:80px;
+	font-weight: bold;
+	font-size:4vw;
+	border-radius: 6px
+}

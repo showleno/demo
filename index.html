@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>饭点首页</title>
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<style type="text/css">
+		#app{
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<!-- 搜索栏 -->
+		<nav class="topBar">
+			<div class="searchWrap">
+				<img src="img/search.png">
+				<input type="text" placeholder="输入商家名称、菜肴">
+			</div>
+			<span id="search" class="search">搜索</span>
+		</nav>
+		<!-- 菜单区 -->
+		<section class="menu">
+			<ul id="menuBox"></ul>
+		</section>
+		<!-- 优惠券 -->
+		<section class="salePaper">
+			<ul id="salePaper"></ul>
+		</section>
+		<!-- 列表 -->
+		<section class="content">
+			<ul id="listContent" class="listContent"></ul>
+			<!-- <div class="loader-more">
+				<span>查看更多团购</span>
+				<span class="arrow">&lt;</span>
+			</div> -->
+		</section>
+		<!-- 固定底部 -->
+		<footer class="pageLink">
+			<ul id="Links"></ul>
+		</footer>
+		<!-- 返回顶部 -->
+		<section class="go-top">TOP</section>
+		<!-- 列表页 -->
+		<section class="listPage">
+			<ul class="order">
+				<li class="sales" data-type="sales">
+					<span>销量</span>
+					<span class="arrow">&lt;</span>
+				</li>
+				<li class="price" data-type="price">
+					<span>价格</span>
+					<span class="arrow">&lt;</span>
+				</li>
+				<li class="evaluate" data-type="evaluate">
+					<span>好评</span>
+					<span class="arrow">&lt;</span>
+				</li>
+			</ul>
+			<div class="listWrap">
+				<ul id="listContent" class="listContent"></ul>
+			</div>
+		</section>
+		<!-- detail详情区 -->
+		<section id="detail" class="detail"></section>
+	</div>
+	<!-- 菜单区 -->
+	<script type="text/template" id="menu_tpl">
+		<li>
+			<a href="<%=href%>">
+				<img src="<%=src%>">
+				<span><%=title%></span>
+			</a>
+		</li>
+	</script>
+	<!-- 优惠券 -->
+	<script type="text/template" id="sale_tpl">
+		<li>
+			<img src="<%=url%>" alt="">
+			<a href="<%=href%>">
+				<img src="<%=img%>" alt="">
+				<span><%=title%></span>
+			</a>
+		</li>
+	</script>
+	<!-- 列表 -->
+	<script type="text/template" id="list_tpl">
+		<li>
+			<a href="<%=href%>">
+				<div class="topBox">
+					<div class="logoImg">
+						<img src="<%=url%>" alt="">
+					</div>
+					<div class="info">
+						<h3><%=title%></h3>
+						<div class="starrating icon-star">
+							<i class="icon-star" style="width:<%=style%>;" ></i>
+						</div>
+						<span><%=address%></span>
+					</div>
+				</div>
+			</a>
+			<div class="botBox">
+				<span class="saleIcon">
+					<% if( fullCut ) {%>
+						<img src="img/list_img/taocan.png" alt="">
+					<% } %>
+					<% if( package ) {%>
+						<img src="img/list_img/manjian.png" alt="">
+					<% } %>
+				</span>
+				<span class="floor"><%=floor%>F</span>
+			</div>
+		</li>
+	</script>
+	<!-- 底部 -->
+	<script type="text/template" id="foot_tpl">
+		<li>
+			<a href="<%=href%>">
+				<i class="<%=name%>"></i>
+				<span><%=title%></span>
+			</a>
+		</li>
+	</script>
+	<!-- 详情页 -->
+	<script type="text/template" id="detail_tpl">
+		<nav>
+			<span>介绍</span>
+			<span>优惠</span>
+			<span>评价</span>
+		</nav>
+		<div class="imgWrap">
+			<img src="<%=img%>" class="foodImg" alt="">
+			<div class="mengban"></div>
+		</div>
+		<div class="prl_8">
+			<div class="shopInfo">
+				<div class="title">
+					<span class="floor"><%=floor%>F</span>
+					<span class="shopName"><%=title%></span>
+					<div class="starrating icon-star">
+						<i class="icon-star" style="width:<%=style%>;" ></i>
+					</div>
+				</div>
+				<div class="address">
+					<div class="left fl">
+						<img src="img/detail/icon1.png">
+						<span><%=address%></span>
+					</div>
+					<div class="right fr">
+						<img src="img/detail/icon2.png">
+						<span>￥<%=price%></span>
+					</div>
+				</div>
+			</div>
+			<div class="shopSales">
+				<div class="title">
+					<span>可领优惠券</span>
+				</div>
+				<div class="salePaper">
+					<img src="<%=salesOne%>" alt="">
+					<img src="<%=salesTwo%>" alt="">
+					<!-- <span>抱歉!该商家没有优惠券</span> -->
+				</div>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="js/lib/require.js" data-main="js/app.js"></script>
+</body>
+</html>

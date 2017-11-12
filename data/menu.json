@@ -1,0 +1,69 @@
+{
+    "errno": 0,
+    "data": [
+        {
+            "title": "火锅",
+            "src":"menu_01.jpg",
+            "width":"50",
+            "height":"51",
+            "type":0,
+            "href":"#hotpot/"
+        },
+        {
+            "title": "西餐",
+            "src":"menu_02.jpg",
+            "width":"50",
+            "height":"51",
+            "type":1,
+            "href":"#sfood/"
+        },
+        {
+            "title": "烧烤",
+            "src":"menu_03.jpg",
+            "width":"50",
+            "height":"51",
+            "type":2,
+            "href":"#bbq/"
+        },
+        {
+            "title": "自助",
+            "src":"menu_04.jpg",
+            "width":"50",
+            "height":"51",
+            "type":3,
+            "href":"#zizhu/"
+        },
+        {
+            "title": "日韩料理",
+            "src":"menu_05.jpg",
+            "width":"50",
+            "height":"51",
+            "type":4,
+            "href":"#jpfood/"
+        },
+        {
+            "title": "地方菜",
+            "src":"menu_06.jpg",
+            "width":"50",
+            "height":"51",
+            "type":5,
+            "href":"#localdish/"
+        },
+        {
+            "title": "海鲜",
+            "src":"menu_07.jpg",
+            "width":"50",
+            "height":"51",
+            "type":6,
+            "href":"#seafood/"
+        },
+        {
+            "title": "清真",
+            "src":"menu_08.jpg",
+            "width":"50",
+            "height":"51",
+            "type":7,
+            "href":"#qingzhen/"
+        }
+    ]
+}

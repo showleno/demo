@@ -1,0 +1,20 @@
+{
+	"errno": 0,
+	"data": [
+		{
+			"title": "全场半价优惠券",
+			"url":"limit_buy.jpg",
+			"img": "seller1.jpg"
+		},
+		{
+			"title": "全场半价优惠券",
+			"url":"hot_top.jpg",
+			"img": "seller2.jpg"
+		},
+		{
+			"title": "哈根达斯",
+			"url":"hot_buy.jpg",
+			"img": "seller3.jpg"
+		}
+	]
+}
